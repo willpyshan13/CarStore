@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/home_car_goods_img"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#FF090909"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:id="@+id/home_car_goods_name"
+        app:layout_constraintTop_toTopOf="@+id/home_car_goods_img"
+        app:layout_constraintLeft_toRightOf="@+id/home_car_goods_img"
+        android:layout_marginLeft="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/home_car_grade_12"
+        android:textSize="12dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:textColor="#FFF76565"
+        android:id="@+id/home_car_grade"
+        app:layout_constraintTop_toBottomOf="@+id/home_car_goods_name"
+        app:layout_constraintStart_toStartOf="@+id/home_car_goods_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF666666"
+        android:id="@+id/home_car_grade_count"
+        app:layout_constraintTop_toTopOf="@+id/home_car_grade"
+        app:layout_constraintBottom_toBottomOf="@+id/home_car_grade"
+        app:layout_constraintLeft_toRightOf="@+id/home_car_grade"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#FF666666"
+        android:layout_marginTop="6dp"
+        android:id="@+id/home_car_sales_volume"
+        app:layout_constraintTop_toBottomOf="@+id/home_car_grade"
+        app:layout_constraintLeft_toLeftOf="@+id/home_car_grade" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF666666"
+        android:id="@+id/home_car_repertory"
+        app:layout_constraintTop_toTopOf="@+id/home_car_sales_volume"
+        app:layout_constraintBottom_toBottomOf="@+id/home_car_sales_volume"
+        app:layout_constraintLeft_toRightOf="@+id/home_car_sales_volume"
+        android:layout_marginLeft="8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#FF090909"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:clickable="true"
+        android:id="@+id/home_car_goods_price"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#FF666666"
+        android:id="@+id/home_car_goods_status"
+        app:layout_constraintBottom_toTopOf="@+id/home_car_goods_price"
+        app:layout_constraintEnd_toEndOf="@+id/home_car_goods_price"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFF1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

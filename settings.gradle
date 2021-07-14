@@ -1,0 +1,6 @@
+include ':login'
+include ':home'
+include ':app'
+include ':baselib'
+include ':common'
+rootProject.name = "CarStore"

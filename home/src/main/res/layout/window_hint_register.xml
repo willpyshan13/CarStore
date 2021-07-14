@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/common_bg_shape">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:textSize="20dp"
+        android:id="@+id/window_hint" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        android:id="@+id/window_hint_cancel"
+        android:gravity="center"
+        android:textColor="#FF090909"
+        android:textSize="18dp"
+        android:text="@string/home_car_my_window_hint_cancel"
+        app:layout_constraintRight_toLeftOf="@+id/window_hint_register" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/window_hint_cancel"
+        android:gravity="center"
+        android:textColor="#FF1791E3"
+        android:text="@string/home_car_my_window_hint_register"
+        app:layout_constraintLeft_toRightOf="@+id/window_hint_cancel"
+        android:id="@+id/window_hint_register"
+        android:textSize="18dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="home_toolbar_title_color">#FF090909</color>
+    <color name="home_toolbar_color">#FFEDF5FB</color>
+    <color name="home_price_color">#FFF76565</color>
+    <color name="home_brand_color">#FF666666</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/recycler_item_home_car_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF090909"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/home_car_qa_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/home_car_qa_name"
+        android:id="@+id/home_car_qa_consultDesc"
+        android:lineSpacingExtra="4dp"
+        android:textColor="#FF666666"
+        android:textSize="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:maxLines="2"
+        android:paddingBottom="6dp"
+        android:ellipsize="end"/>
+
+    <!--<com.yanxin.home.widgt.FriendsCircleImageLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_car_qa_images"
+        app:layout_constraintTop_toBottomOf="@+id/home_car_qa_consultDesc"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFF1F1F1"
+        android:layout_marginTop="14dp"
+        android:id="@+id/home_car_linear_view"
+        app:layout_constraintTop_toBottomOf="@+id/home_car_qa_consultDesc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_car_qa_price"
+        android:textSize="20dp"
+        android:textColor="#FFF76565"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_car_qa"
+        app:layout_constraintTop_toTopOf="@+id/home_car_qa"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        android:background="#FF1791E3"
+        android:id="@+id/home_car_qa"
+        android:textSize="12sp"
+        android:text="@string/car_home_case_qa"
+        android:textColor="#FFFFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/home_car_linear_view"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

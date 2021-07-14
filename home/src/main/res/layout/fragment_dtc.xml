@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/home_car_dtc_search_24"
+        android:paddingLeft="8dp"
+        android:drawablePadding="6dp"
+        android:hint="@string/car_home_fault_search_hint"
+        android:id="@+id/car_home_dtc_ed"
+        android:background="@drawable/home_car_dtc_ed_shape"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/car_home_dtc_liner"
+        app:layout_constraintTop_toBottomOf="@+id/car_home_dtc_ed"
+        android:layout_height="44dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:text="@string/car_home_fault_code"
+            android:textSize="14dp"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left"
+            android:textColor="#FF090909"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FFF1F1F1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:text="@string/car_home_fault_catelog"
+            android:textSize="14dp"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FF090909"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FFF1F1F1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:text="@string/car_home_fault_brand"
+            android:textSize="14dp"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:textColor="#FF090909"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_home_dtc_liner"
+        android:layout_height="1dp"
+        android:background="#FFF1F1F1"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/home_car_dtc_refresh_layout"
+        app:layout_constraintTop_toBottomOf="@+id/car_home_dtc_liner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_car_dtc_release"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:srlAccentColor="@android:color/transparent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_car_dtc_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"/>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:background="@drawable/home_car_dtc_release_shape"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/home_car_dtc_release"
+        android:layout_marginLeft="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="16dp"
+        android:textColor="#FFFFFFFF"
+        android:gravity="center"
+        android:text="@string/home_car_dtc_release"
+        android:layout_marginRight="15dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

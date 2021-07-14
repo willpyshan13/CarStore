@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_home_driving">代驾接单</string>
+    <string name="car_home_maintenance">维修保养</string>
+    <string name="car_home_online">线上服务</string>
+    <string name="car_home_service">现场服务</string>
+    <string name="car_home_goods">商品管理</string>
+    <string name="car_home_my">我的</string>
+    <string name="car_home_driving_detail">代驾详情</string>
+
+    <string name="car_home_driving_order_receiving">直接抢单</string>
+    <string name="car_home_driving_start_time">"出发时间:"</string>
+    <string name="car_home_driving_start_point">"出发地:"</string>
+    <string name="car_home_driving_end_point">"目的地:"</string>
+    <string name="home_car_driving_journey">"全程约:"</string>
+
+
+    <string name="car_home_release_goods">发布商品</string>
+    <string name="car_home_release_case">发布新案例</string>
+    <string name="car_home_grade_count">"%d条评论"</string>
+    <string name="car_home_goods_price">"¥%.2f"</string>
+    <string name="car_home_goods_sales_volume">"销量: %d"</string>
+    <string name="car_home_goods_repertory">"库存: %d"</string>
+    <string name="home_car_service_goods_pay_detail">"商品价格: ¥ %s 物流费用：¥ %.2f 实际付款：¥ %s"</string>
+    <string name="home_car_service_name_mobile">"%s  %s"</string>
+    <string name="home_car_service_pay_hint">"付款状态"</string>
+
+    <string name="home_car_service_brand">"品牌:"</string>
+    <string name="home_car_service_vehicle_model">"车型:"</string>
+    <string name="home_car_service_error_description">"故障描述:"</string>
+    <string name="home_car_service_add_order">新增现场订单</string>
+    <string name="home_car_service_distance">"距离%.2fKm"</string>
+
+    <string name="car_home_case_qa">"回 答"</string>
+    <string name="car_home_case_qa_already">"已回答"</string>
+    <string name="car_home_case_answer">"立即抢答"</string>
+    <string name="car_home_case_already_answer">"已抢答"</string>
+    <string name="car_home_fault_code">"故障代码"</string>
+    <string name="car_home_fault_brand">"品牌"</string>
+    <string name="car_home_fault_catelog">"故障说明"</string>
+    <string name="car_home_fault_search_hint">"请输入故障车代码"</string>
+    <string name="home_car_dtc_release">"补录一个"</string>
+    <string name="home_car_new_course">"最新培训教程"</string>
+    <string name="home_car_all_course">"全部培训教程"</string>
+
+    <string name="car_home_release_case_hint">"只有技师账号才可发布案例哦..."</string>
+    <string name="car_home_release_good_hint">"只有店铺账号才可发布商品哦..."</string>
+
+    <string name="home_car_case_earnings">"收益"</string>
+    <string name="home_car_case_sales_volume">"销量"</string>
+    <string name="home_car_my_wallet">"钱包"</string>
+    <string name="home_car_my_order">"订单"</string>
+    <string name="home_car_my_account">"账户信息"</string>
+    <string name="home_car_my_store">"关联店铺"</string>
+    <string name="home_car_my_quiz">"我的问题"</string>
+    <string name="home_car_my_case">"我的案例"</string>
+    <string name="home_car_my_course">"我的课程"</string>
+    <string name="home_car_my_dtc">"我的DTC查询"</string>
+    <string name="home_car_my_technician">"技师管理"</string>
+    <string name="home_car_my_technician_to_store">"切换店铺身份"</string>
+    <string name="home_car_my_store_to_technician">"切换技师身份"</string>
+    <string name="home_car_my_withdraw">"可提现%.2f元"</string>
+    <string name="home_car_my_order_total">"总计%d单"</string>
+
+    <string name="home_car_my_share">分享嘟一家服务</string>
+
+
+    <string name="home_car_my_window_hint_store">"当前手机号暂未注册\n店铺身份"</string>
+    <string name="home_car_my_window_hint_technician">"当前手机号暂未注册\n技师身份"</string>
+    <string name="home_car_my_window_hint_cancel">"取 消"</string>
+    <string name="home_car_my_window_hint_register">"前往注册"</string>
+
+    <string name="home_car_my_exit">"退出登录"</string>
+    <string name="home_car_my_service">"我的客服"</string>
+
+    <array name="car_goods_title">
+        <item>上架商品</item>
+        <item>下架商品</item>
+    </array>
+
+    <array name="car_online_title">
+        <item>技术案例</item>
+        <item>知识问答</item>
+        <item>DTC查询</item>
+        <item>培训教育</item>
+    </array>
+    <array name="car_service_title">
+        <item>抢单</item>
+        <item>我的抢单</item>
+        <item>现场支持下单</item>
+    </array>
+</resources>
